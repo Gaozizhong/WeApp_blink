@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+      "gzz-tag":"/components/tag/index",
+      "gzz-like":"/components/like/index",
+      "gzz-mask": "/components/mask/index"
+  }
+}

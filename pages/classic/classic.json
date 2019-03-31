@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "gzz-like":"/components/like/index",
+    "gzz-movie": "/components/classic/movie/index",
+    "gzz-music": "/components/classic/music/index",
+    "gzz-essay": "/components/classic/essay/index",
+    "gzz-episode": "/components/episode/index",
+    "gzz-navi": "/components/navi/index"
+  }
+}

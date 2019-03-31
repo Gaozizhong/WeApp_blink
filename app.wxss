@@ -1,0 +1,5 @@
+/**app.wxss**/
+page{
+  font-weight: lighter;
+  font-size: 32rpx;
+}

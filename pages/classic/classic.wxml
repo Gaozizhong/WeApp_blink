@@ -1,0 +1,12 @@
+<!--pages/classic/classic.wxml-->
+<view class='classic-container'>
+  <view class='header'>
+    <gzz-episode class="epsoide" index="{{classicData.index}}" />
+    <gzz-like class="like" bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}" />
+  </view>
+
+  <gzz-movie hidden='{{classicData.type!=100}}' img="{{classicData.image}}" content="{{classicData.content}}" />
+  <gzz-music wx:if='{{classicData.type==200}}' img="{{classicData.image}}" content="{{classicData.content}}" src="{{classicData.url}}" title="{{classicData.title}}" />
+  <gzz-essay hidden='{{classicData.type!=300}}' img="{{classicData.image}}" content="{{classicData.content}}" />
+  <gzz-navi bind:left="onNext" bind:right="onPreviou" class="navi" title="{{classicData.title}}" first="{{first}}" latest="{{latest}}" />
+</view>

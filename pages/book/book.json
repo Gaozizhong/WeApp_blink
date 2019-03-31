@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "gzz-book":"/components/book/index"
+  }
+}
