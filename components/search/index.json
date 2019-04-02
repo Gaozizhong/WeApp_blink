@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "gzz-tag": "/components/tag/index",
+        "gzz-book": "/components/book/index",
+        "gzz-loading": "/components/loading/index"
+    }
+}

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "gzz-book":"/components/book/index"
+    "gzz-book":"/components/book/index",
+    "gzz-search": "/components/search/index"
   }
 }
