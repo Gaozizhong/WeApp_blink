@@ -49,9 +49,15 @@
         <view bind:tap="onFackPost" class='post-fake'>
             <text>输入短评</text>
         </view>
-        <view class='like-container'>
-            <gzz-like bind:like="onLike" class="like" like="{{likeStatus}}" count="{{likeCount}}" />
+
+       <view class='like-container'>
+            <gzz-like class="like" bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}" />
+
+            <gzz-button class='share-btn' open-type='share'>
+                <image class='share' slot='img' src='/images/icon/share.png' />
+            </gzz-button>
         </view>
+
     </view>
 </view>
 

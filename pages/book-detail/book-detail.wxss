@@ -136,7 +136,7 @@
 .like-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -196,4 +196,14 @@
 
 .shadow{
     color: #999;
+}
+
+.share-btn{
+    margin-top: 20rpx;
+    margin-left: 10rpx;
+}
+
+.share{
+    width: 40rpx;
+    height: 40rpx;
 }

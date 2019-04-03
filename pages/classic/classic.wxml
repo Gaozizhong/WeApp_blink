@@ -1,12 +1,20 @@
 <!--pages/classic/classic.wxml-->
 <view class='classic-container'>
-  <view class='header'>
-    <gzz-episode class="epsoide" index="{{classicData.index}}" />
-    <gzz-like class="like" bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}" />
-  </view>
+    <view class='header'>
+        <gzz-episode class="epsoide" index="{{classicData.index}}" />
 
-  <gzz-movie hidden='{{classicData.type!=100}}' img="{{classicData.image}}" content="{{classicData.content}}" />
-  <gzz-music wx:if='{{classicData.type==200}}' img="{{classicData.image}}" content="{{classicData.content}}" src="{{classicData.url}}" title="{{classicData.title}}" />
-  <gzz-essay hidden='{{classicData.type!=300}}' img="{{classicData.image}}" content="{{classicData.content}}" />
-  <gzz-navi bind:left="onNext" bind:right="onPreviou" class="navi" title="{{classicData.title}}" first="{{first}}" latest="{{latest}}" />
+        <view class='like-container'>
+            <gzz-like class="like" bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}" />
+
+            <gzz-button class='share-btn' open-type='share'>
+                <image class='share' slot='img' src='/images/icon/share.png' />
+            </gzz-button>
+        </view>
+
+    </view>
+
+    <gzz-movie hidden='{{classicData.type!=100}}' img="{{classicData.image}}" content="{{classicData.content}}" />
+    <gzz-music wx:if='{{classicData.type==200}}' img="{{classicData.image}}" content="{{classicData.content}}" src="{{classicData.url}}" title="{{classicData.title}}" />
+    <gzz-essay hidden='{{classicData.type!=300}}' img="{{classicData.image}}" content="{{classicData.content}}" />
+    <gzz-navi bind:left="onNext" bind:right="onPreviou" class="navi" title="{{classicData.title}}" first="{{first}}" latest="{{latest}}" />
 </view>

@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+      "gzz-tag":"/components/tag/index",
+      "gzz-button":"/components/image-button/index",
+      "gzz-preview": "/components/preview/index"
+  },
+  "backgroundColor": "#f5f5f5"
 }
