@@ -29,6 +29,7 @@ Page({
     onLoad: function(options) {
         wx.showLoading()
         const bid = options.bid
+        console.log(bid)
         const detail = bookModel.getDetail(bid)
         const comments = bookModel.getComments(bid)
         const likeStatus = bookModel.getLikeStatus(bid)

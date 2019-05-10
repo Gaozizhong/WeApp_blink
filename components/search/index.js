@@ -97,6 +97,7 @@ Component({
             this.setData({
                 q: word
             })
+            
             bookModel.search(0, word).then(res => {
                 this.setMoreData(res.books)
                 this.setTotal(res.total)
